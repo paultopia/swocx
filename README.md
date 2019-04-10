@@ -1,3 +1,1 @@
-# swocx
-
-A description of this package.
+test/example code to merge docx files on macos

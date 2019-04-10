@@ -45,4 +45,7 @@ func toDocx(_ str: NSAttributedString) -> Data {
 
 let docdata = mergeDocs()
 
-print(docdata.string)
+let docx = toDocx(docdata)
+
+let dest = URL(fileURLWithPath: "testSwiftDocxOutput.docx")
+try! docx.write(to: dest)
